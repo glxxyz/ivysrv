@@ -1,6 +1,6 @@
 ## ivysrv demo project
 
-Executes Ivy commands e.g.: http://localhost:8000/ivy/2+2
+Executes Ivy commands e.g.: http://localhost:8000/2+2
 
 Ivy source & documentation: https://robpike.io/ivy
 
