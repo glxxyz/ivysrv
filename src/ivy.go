@@ -23,6 +23,11 @@ func ivyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	if unescaped == "" {
+		_, _ = fmt.Fprintln(w, "ivysrv")
+		return
+	}
+
 	result, err := runCommand(unescaped)
 	if err != nil {
 		w.WriteHeader(400)

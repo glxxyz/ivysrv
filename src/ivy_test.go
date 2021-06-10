@@ -11,6 +11,7 @@ func TestHandlerSuccess(t *testing.T) {
 	parameters := []struct {
 		input, expected string
 	}{
+		{"", "ivysrv\n"},
 		{"2+2", "4\n"},
 		{"iota 10", "1 2 3 4 5 6 7 8 9 10\n"},
 		{"iota%2010", "1 2 3 4 5 6 7 8 9 10\n"},
