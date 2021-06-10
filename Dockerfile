@@ -4,5 +4,5 @@ COPY . .
 RUN go build -o ivysrv ./src
 WORKDIR /bin
 RUN cp /build/ivysrv .
-EXPOSE 8080
+EXPOSE 8000
 CMD ["/bin/ivysrv"]

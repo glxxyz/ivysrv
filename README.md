@@ -1,15 +1,16 @@
 ## ivysrv demo project
 
-Executes Ivy commands e.g.: http://localhost:8080/ivy/2+2
+Executes Ivy commands e.g.: http://localhost:8000/ivy/2+2
 
 Ivy source & documentation: https://robpike.io/ivy
 
 ## Local Testing
 ```
 go mod download robpike.io/ivy
+go run ./src
 ```
-## Deploying
+## Running with Docker
 ```
 docker build . -t ivysrv
-docker run -p 8000:8080 ivysrv
+docker run -p 8000:8000 ivysrv
 ``` 
