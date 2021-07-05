@@ -11,7 +11,7 @@ pipeline {
       steps {
           cleanWs()
           checkout scm
-          sh 'XDG_CACHE_HOME=/tmp/.cache make docker'
+#          sh 'XDG_CACHE_HOME=/tmp/.cache make docker'
           sh 'docker tag jmalloc/ivysrv:dev us-east1-docker.pkg.dev/ccd-starter-jenkins-gke/ivysrv-jenkins'
           sh 'docker push us-east1-docker.pkg.dev/ccd-starter-jenkins-gke/ivysrv-jenkins'
           sh 'skaffold deploy --images=us-east1-docker.pkg.dev/ccd-starter-jenkins-gke/ivysrv-jenkins:latest --profile=beta'
